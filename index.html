@@ -268,21 +268,71 @@
   </div>
 
   <!-- GALLERY PAGE -->
-  <div id="gallery" class="page">
-    <div class="section-header">
-      <h2 class="section-title">Company <span>Media Gallery</span></h2>
-      <p class="section-subtitle">Operational photos and task logs managed via your Admin CMS.</p>
-    </div>
-
-    <div class="filters">
-      <button class="filter-btn active" onclick="filterGallery('all')">All</button>
-      <button class="filter-btn" onclick="filterGallery('diving')">Diving</button>
-      <button class="filter-btn" onclick="filterGallery('inspection')">Inspection</button>
-      <button class="filter-btn" onclick="filterGallery('fleet')">Fleet</button>
-    </div>
-
-    <div class="grid" id="publicGalleryGrid"></div>
+<div id="gallery" class="page">
+  <div class="section-header">
+    <h2 class="section-title">Company <span>Media Gallery</span></h2>
+    <p class="section-subtitle">Operational photos and subsea task documentation</p>
   </div>
+
+  <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px 0;">
+    
+    <!-- Photo 1 -->
+    <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <img src="image/commercial-diving.jpeg" alt="Commercial Diving Operations" style="width: 100%; height: 220px; object-fit: cover;">
+      <div style="padding: 15px;">
+        <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Diving</span>
+        <h4 style="margin: 10px 0 0; color: #0b132b;">Commercial Diver Operations</h4>
+      </div>
+    </div>
+
+    <!-- Photo 2 -->
+    <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <img src="image/commercial-diving2.jpeg" alt="Subsea Diver Deployment" style="width: 100%; height: 220px; object-fit: cover;">
+      <div style="padding: 15px;">
+        <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Diving</span>
+        <h4 style="margin: 10px 0 0; color: #0b132b;">Subsea Diver Deployment</h4>
+      </div>
+    </div>
+
+    <!-- Photo 3 -->
+    <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <img src="image/inspection.jpeg" alt="Underwater Inspection" style="width: 100%; height: 220px; object-fit: cover;">
+      <div style="padding: 15px;">
+        <span style="background: #e8f0fe; color: #1967d2; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Inspection</span>
+        <h4 style="margin: 10px 0 0; color: #0b132b;">Propeller Hub Inspection</h4>
+      </div>
+    </div>
+
+    <!-- Photo 4 -->
+    <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <img src="image/hull-cleaning.jpeg" alt="Underwater Hull Cleaning" style="width: 100%; height: 220px; object-fit: cover;">
+      <div style="padding: 15px;">
+        <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Diving</span>
+        <h4 style="margin: 10px 0 0; color: #0b132b;">Underwater Hull Cleaning</h4>
+      </div>
+    </div>
+
+    <!-- Photo 5 -->
+    <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <img src="image/hull-scrubbing.jpeg" alt="Submerged Hull Scrubbing" style="width: 100%; height: 220px; object-fit: cover;">
+      <div style="padding: 15px;">
+        <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Diving</span>
+        <h4 style="margin: 10px 0 0; color: #0b132b;">Submerged Hull Scrubbing</h4>
+      </div>
+    </div>
+
+    <!-- Photo 6 -->
+    <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <img src="image/fleet-engine.jpeg" alt="Fleet Engine Maintenance" style="width: 100%; height: 220px; object-fit: cover;">
+      <div style="padding: 15px;">
+        <span style="background: #fef7e0; color: #b06000; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Fleet</span>
+        <h4 style="margin: 10px 0 0; color: #0b132b;">Fleet Engine Maintenance</h4>
+      </div>
+    </div>
+
+
+  </div>
+</div>
 
 <!-- ABOUT PAGE -->
   <div id="about" class="page">
@@ -426,7 +476,7 @@
 
     <div class="footer-bottom">
       <div>&copy; 2026 POWER MARINE SERVICES INC. Monrovia, Liberia. All rights reserved.</div>
-      <div><span class="secret-admin-link" onclick="openAdminPortal()">[Staff Login]</span></div>
+      
     </div>
   </footer>
 
