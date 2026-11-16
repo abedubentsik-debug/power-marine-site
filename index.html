@@ -66,8 +66,6 @@
     .btn:hover { background: var(--primary-dark); transform: translateY(-2px); }
     .btn-secondary { background: var(--secondary); box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35); }
     .btn-secondary:hover { background: #0369A1; transform: translateY(-2px); }
-    .btn-danger { background: var(--danger); }
-    .btn-danger:hover { background: #DC2626; }
 
     /* Page Architecture */
     .page { display: none; padding: 2.5rem 1rem; max-width: 1400px; margin: 0 auto; width: 100%; flex: 1; }
@@ -90,33 +88,11 @@
     .card { background: var(--white); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 6px 18px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; }
     .card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.1); border-color: var(--primary); }
     .card-icon-box { background: rgba(0, 168, 89, 0.08); height: 140px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--primary); border-bottom: 3px solid var(--primary); }
-    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card img { width: 100%; height: 220px; object-fit: cover; }
     .card-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
     .card-body h3 { color: var(--dark); margin-bottom: 0.6rem; font-size: 1.2rem; font-weight: 700; }
     .card-body p { color: #475569; font-size: 0.92rem; line-height: 1.5; margin-bottom: 1rem; }
-    .card-tag { display: inline-block; background: rgba(0, 168, 89, 0.08); color: var(--primary); font-weight: 700; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; text-transform: uppercase; margin-top: auto; align-self: flex-start; }
-
-    /* CCTV Monitoring Interface */
-    .cctv-container { background: #040D1A; border: 2px solid var(--primary); border-radius: 12px; padding: 1rem; color: #00FF88; font-family: 'Courier New', monospace; margin-top: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-    .cctv-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1E293B; padding-bottom: 0.6rem; margin-bottom: 0.8rem; font-weight: bold; font-size: 0.78rem; flex-wrap: wrap; gap: 5px; }
-    .cctv-screen { background: #0A192F; height: 260px; border-radius: 8px; border: 1px solid #00FF88; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #00FF88; text-align: center; padding: 1rem; }
-
-    /* Gallery Filters */
-    .filters { display: flex; justify-content: center; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 2rem; }
-    .filter-btn { background: var(--white); border: 1px solid var(--border); padding: 0.5rem 1.2rem; border-radius: 30px; cursor: pointer; font-weight: 700; color: var(--gray); transition: all 0.3s ease; font-size: 0.9rem; }
-    .filter-btn.active, .filter-btn:hover { background: var(--primary); color: var(--white); border-color: var(--primary); box-shadow: 0 4px 12px rgba(0,168,89,0.3); }
-
-    /* Admin Dashboard */
-    .admin-container { background: var(--dark-card); color: #F8FAFC; border-radius: 16px; padding: 1.5rem; border: 1px solid #1E293B; }
-    .admin-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #334155; padding-bottom: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 10px; }
-    .admin-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-    @media(min-width: 900px) { .admin-grid { grid-template-columns: 1fr 1.3fr; } }
-    .admin-card { background: #0F172A; padding: 1.5rem; border-radius: 12px; border: 1px solid #334155; }
-    .admin-form { display: grid; gap: 1rem; }
-    .admin-form label { font-size: 0.85rem; color: #94A3B8; font-weight: 600; }
-    .admin-form input, .admin-form select { padding: 0.8rem; border-radius: 8px; border: 1px solid #334155; background: #1E293B; color: white; width: 100%; font-size: 0.95rem; }
-    .admin-photo-list { display: grid; gap: 1rem; max-height: 400px; overflow-y: auto; padding-right: 5px; }
-    .admin-photo-item { display: flex; justify-content: space-between; align-items: center; background: #1E293B; padding: 0.8rem; border-radius: 8px; border: 1px solid #334155; flex-wrap: wrap; gap: 8px; }
+    .card-tag { display: inline-block; background: rgba(0, 168, 89, 0.08); color: var(--primary); font-weight: 700; font-size: 0.75rem; padding: 0.25rem 0.7rem; border-radius: 4px; text-transform: uppercase; margin-top: auto; align-self: flex-start; }
 
     /* Corporate Footer & Contacts */
     footer { background: var(--dark); color: #94A3B8; padding-top: 3rem; padding-bottom: 2rem; border-top: 4px solid var(--primary); margin-top: auto; }
@@ -128,8 +104,6 @@
     .contact-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; color: #CBD5E1; word-break: break-word; }
     .contact-list span { color: var(--accent); font-size: 1rem; }
     .footer-bottom { max-width: 1400px; margin: 0 auto; padding: 1.5rem 1rem 0 1rem; border-top: 1px solid #1E293B; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; text-align: center; }
-    .secret-admin-link { color: #334155; text-decoration: none; cursor: pointer; transition: 0.3s; margin-left: 5px; }
-    .secret-admin-link:hover { color: var(--accent); }
 
     /* MOBILE RESPONSIVE MEDIA QUERY */
     @media (max-width: 768px) {
@@ -233,7 +207,7 @@
     </div>
   </div>
 
- <!-- SERVICES PAGE -->
+  <!-- SERVICES PAGE -->
   <div id="services" class="page">
     <div class="section-header">
       <h2 class="section-title">Commercial <span>Underwater Services</span></h2>
@@ -246,7 +220,7 @@
         <div class="card-body"><h3>1. Commercial Underwater Diving</h3><p>Deep water and in-port commercial diving operations, including underwater salvage, sea chest clearing, hull scraping, and repair work.</p><span class="card-tag">Offshore & In-Port</span></div>
       </div>
       <div class="card">
-       <img src="image/inspection.jpeg" alt="Class Inspection & Surveys" onerror="this.src='image/ship.jpeg'">
+        <img src="image/inspection.jpeg" alt="Class Inspection & Surveys" onerror="this.src='image/ship.jpeg'">
         <div class="card-body"><h3>2. Class Inspection & Propeller Surveys</h3><p>Detailed propeller hub assessments, stern tube checks, rudder clearances, and underwater photography for classification societies.</p><span class="card-tag">HD Photo Logging</span></div>
       </div>
       <div class="card">
@@ -258,212 +232,233 @@
         <div class="card-body"><h3>4. Workboat Rental & Diver Transport</h3><p>Dedicated high-horsepower support workboats available to ferry diving teams, gear, and inspectors directly to anchored ships.</p><span class="card-tag">Fleet Support</span></div>
       </div>
       <div class="card">
-       <img src="image/port-permit.jpeg" alt="National Port Diving Permits">
+        <img src="image/port-permit.jpeg" alt="National Port Diving Permits">
         <div class="card-body"><h3>5. National Port Diving Permits</h3><p>Streamlined dive permit processing with the National Port Authority (NPA) to ensure immediate diving access upon ship arrival.</p><span class="card-tag">Rapid Clearance</span></div>
       </div>
     </div>
   </div>
 
-  <!-- GALLERY PAGE -->
+  <!-- GALLERY PAGE (ALL 21 PHOTOS WITH FULL DETAILS) -->
   <div id="gallery" class="page">
     <div class="section-header">
       <h2 class="section-title">Company <span>Media Gallery</span></h2>
-      <p class="section-subtitle">Operational photos and subsea task documentation</p>
+      <p class="section-subtitle">Operational photos and subsea task documentation across Liberian ports.</p>
     </div>
 
-    <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px 0;">
-      
+    <div class="grid">
       <!-- Photo 1 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/commercial-diving.jpeg" alt="Commercial Diving Operations" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Diving</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Commercial Diver Operations</h4>
+      <div class="card">
+        <img src="image/commercial-diving.jpeg" alt="Commercial Diver Operations">
+        <div class="card-body">
+          <h3>Commercial Diver Operations</h3>
+          <p>Surface-supplied commercial diving team preparing for subsea hull maintenance and structural checks.</p>
+          <span class="card-tag">Diving</span>
         </div>
       </div>
 
       <!-- Photo 2 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/commercial-diving2.jpeg" alt="Subsea Diver Deployment" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Diving</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Subsea Diver Deployment</h4>
+      <div class="card">
+        <img src="image/commercial-diving2.jpeg" alt="Subsea Diver Deployment">
+        <div class="card-body">
+          <h3>Subsea Diver Deployment</h3>
+          <p>Active underwater intervention carried out by certified divers equipped with live surface communications.</p>
+          <span class="card-tag">Diving</span>
         </div>
       </div>
 
       <!-- Photo 3 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/inspection.jpeg" alt="Underwater Inspection" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e8f0fe; color: #1967d2; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Inspection</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Propeller Hub Inspection</h4>
+      <div class="card">
+        <img src="image/inspection.jpeg" alt="Propeller Hub Inspection">
+        <div class="card-body">
+          <h3>Propeller Hub Inspection</h3>
+          <p>Close-range underwater photographic survey of vessel propeller blades and stern tube seals.</p>
+          <span class="card-tag">Inspection</span>
         </div>
       </div>
 
       <!-- Photo 4 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/propeller.jpeg" alt="Propeller Maintenance" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e8f0fe; color: #1967d2; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Inspection</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Propeller Maintenance</h4>
+      <div class="card">
+        <img src="image/propeller.jpeg" alt="Propeller Maintenance">
+        <div class="card-body">
+          <h3>Propeller Maintenance</h3>
+          <p>Detailed subsea polishing and clearance inspection to prevent propulsion drag and cavitation.</p>
+          <span class="card-tag">Inspection</span>
         </div>
       </div>
 
       <!-- Photo 5 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/propeller 2.jpeg" alt="Propeller Survey Phase 2" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e8f0fe; color: #1967d2; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Inspection</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Propeller Survey Phase 2</h4>
+      <div class="card">
+        <img src="image/propeller 2.jpeg" alt="Propeller Survey Phase 2">
+        <div class="card-body">
+          <h3>Propeller Survey Phase 2</h3>
+          <p>Verification of blade pitch, rope guard integrity, and sacrificial zinc anodes during port call.</p>
+          <span class="card-tag">Inspection</span>
         </div>
       </div>
 
       <!-- Photo 6 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/propeller 3.jpeg" alt="Propeller Survey Phase 3" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e8f0fe; color: #1967d2; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Inspection</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Propeller Survey Phase 3</h4>
+      <div class="card">
+        <img src="image/propeller 3.jpeg" alt="Propeller Survey Phase 3">
+        <div class="card-body">
+          <h3>Propeller Survey Phase 3</h3>
+          <p>Final class-approved underwater documentation confirming clean propulsion assembly prior to departure.</p>
+          <span class="card-tag">Inspection</span>
         </div>
       </div>
 
       <!-- Photo 7 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/hull-cleaning.jpeg" alt="Underwater Hull Cleaning" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Diving</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Underwater Hull Cleaning</h4>
+      <div class="card">
+        <img src="image/hull-cleaning.jpeg" alt="Underwater Hull Cleaning">
+        <div class="card-body">
+          <h3>Underwater Hull Cleaning</h3>
+          <p>Removal of heavy marine bio-fouling and barnacles along the vessel waterline and flat bottom.</p>
+          <span class="card-tag">Diving</span>
         </div>
       </div>
 
       <!-- Photo 8 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/hull-cleaning2.jpeg" alt="Hull Cleaning Operations 2" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Diving</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Hull Cleaning Operations 2</h4>
+      <div class="card">
+        <img src="image/hull-cleaning2.jpeg" alt="Hull Cleaning Operations 2">
+        <div class="card-body">
+          <h3>Hull Cleaning Operations 2</h3>
+          <p>Subsea hydraulic rotary brushing to restore hull smoothness and optimize vessel fuel efficiency.</p>
+          <span class="card-tag">Diving</span>
         </div>
       </div>
 
       <!-- Photo 9 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/hull-cleaning 4.jpeg" alt="Hull Cleaning Operations 4" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Diving</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Hull Cleaning Operations 4</h4>
+      <div class="card">
+        <img src="image/hull-cleaning 4.jpeg" alt="Hull Cleaning Operations 4">
+        <div class="card-body">
+          <h3>Hull Cleaning Operations 4</h3>
+          <p>Clearing sea chest intake gratings and bilge keels to maintain proper engine cooling flow.</p>
+          <span class="card-tag">Diving</span>
         </div>
       </div>
 
       <!-- Photo 10 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/hull-scrubbing.jpeg" alt="Submerged Hull Scrubbing" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Diving</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Submerged Hull Scrubbing</h4>
+      <div class="card">
+        <img src="image/hull-scrubbing.jpeg" alt="Submerged Hull Scrubbing">
+        <div class="card-body">
+          <h3>Submerged Hull Scrubbing</h3>
+          <p>Targeted rudder and keel scrubbing completed in-port without delaying scheduled cargo loading.</p>
+          <span class="card-tag">Diving</span>
         </div>
       </div>
 
       <!-- Photo 11 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/fleet-engine.jpeg" alt="Fleet Engine Maintenance" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #fef7e0; color: #b06000; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Fleet</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Fleet Engine Maintenance</h4>
+      <div class="card">
+        <img src="image/fleet-engine.jpeg" alt="Fleet Engine Maintenance">
+        <div class="card-body">
+          <h3>Fleet Engine Maintenance</h3>
+          <p>Preventive mechanical servicing of Power Marine support workboat engines for 24/7 dispatch readiness.</p>
+          <span class="card-tag">Fleet</span>
         </div>
       </div>
 
       <!-- Photo 12 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/port-permit.jpeg" alt="Port Clearance & Permit" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e8f0fe; color: #1967d2; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Compliance</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Port Clearance & Permit</h4>
+      <div class="card">
+        <img src="image/port-permit.jpeg" alt="Port Clearance & Permit">
+        <div class="card-body">
+          <h3>Port Clearance & Permit</h3>
+          <p>Official National Port Authority (NPA) regulatory documentation and harbor diving authorization.</p>
+          <span class="card-tag">Compliance</span>
         </div>
       </div>
 
       <!-- Photo 13 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/ship under.jpeg" alt="Subsea Ship Hull Survey" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e8f0fe; color: #1967d2; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Inspection</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Subsea Ship Hull Survey</h4>
+      <div class="card">
+        <img src="image/ship under.jpeg" alt="Subsea Ship Hull Survey">
+        <div class="card-body">
+          <h3>Subsea Ship Hull Survey</h3>
+          <p>Full-length underwater plating and weld seam inspection performed for international cargo carriers.</p>
+          <span class="card-tag">Inspection</span>
         </div>
       </div>
 
       <!-- Photo 14 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/ship underwater.jpeg" alt="Underwater Vessel Inspection" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e8f0fe; color: #1967d2; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Inspection</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Underwater Vessel Inspection</h4>
+      <div class="card">
+        <img src="image/ship underwater.jpeg" alt="Underwater Vessel Inspection">
+        <div class="card-body">
+          <h3>Underwater Vessel Inspection</h3>
+          <p>Live CCTV-monitored hull condition assessment verifying structural integrity below the waterline.</p>
+          <span class="card-tag">Inspection</span>
         </div>
       </div>
 
       <!-- Photo 15 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/under water view.jpeg" alt="Subsea Underwater View" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e8f0fe; color: #1967d2; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Diving</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Subsea Underwater View</h4>
+      <div class="card">
+        <img src="image/under water view.jpeg" alt="Subsea Underwater View">
+        <div class="card-body">
+          <h3>Subsea Underwater View</h3>
+          <p>High-clarity subsea visibility logging during port operations in Monrovia and Grand Bassa waters.</p>
+          <span class="card-tag">Diving</span>
         </div>
       </div>
 
       <!-- Photo 16 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/work1.jpeg" alt="Marine Operations Log 1" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Operations</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Marine Task Log 1</h4>
+      <div class="card">
+        <img src="image/work1.jpeg" alt="Marine Task Log 1">
+        <div class="card-body">
+          <h3>Marine Task Log 1</h3>
+          <p>On-site diving crew mobilization and safety briefing prior to offshore vessel boarding.</p>
+          <span class="card-tag">Operations</span>
         </div>
       </div>
 
       <!-- Photo 17 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/work2.jpeg" alt="Marine Operations Log 2" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Operations</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Marine Task Log 2</h4>
+      <div class="card">
+        <img src="image/work2.jpeg" alt="Marine Task Log 2">
+        <div class="card-body">
+          <h3>Marine Task Log 2</h3>
+          <p>Deployment of commercial diving umbilical systems and surface air control manifolds.</p>
+          <span class="card-tag">Operations</span>
         </div>
       </div>
 
       <!-- Photo 18 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/work3.jpeg" alt="Marine Operations Log 3" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Operations</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Marine Task Log 3</h4>
+      <div class="card">
+        <img src="image/work3.jpeg" alt="Marine Task Log 3">
+        <div class="card-body">
+          <h3>Marine Task Log 3</h3>
+          <p>Workboat transfer of marine technicians and subsea inspection equipment to anchored tanker.</p>
+          <span class="card-tag">Operations</span>
         </div>
       </div>
 
       <!-- Photo 19 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/work4.jpeg" alt="Marine Operations Log 4" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Operations</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Marine Task Log 4</h4>
+      <div class="card">
+        <img src="image/work4.jpeg" alt="Marine Task Log 4">
+        <div class="card-body">
+          <h3>Marine Task Log 4</h3>
+          <p>Subsea maintenance execution with continuous standby rescue diver supervision on deck.</p>
+          <span class="card-tag">Operations</span>
         </div>
       </div>
 
       <!-- Photo 20 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/work5.jpeg" alt="Marine Operations Log 5" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Operations</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Marine Task Log 5</h4>
+      <div class="card">
+        <img src="image/work5.jpeg" alt="Marine Task Log 5">
+        <div class="card-body">
+          <h3>Marine Task Log 5</h3>
+          <p>Post-cleaning hull verification and photographic reporting delivered directly to vessel master.</p>
+          <span class="card-tag">Operations</span>
         </div>
       </div>
 
       <!-- Photo 21 -->
-      <div class="gallery-card" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <img src="image/work6.jpeg" alt="Marine Operations Log 6" style="width: 100%; height: 220px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <span style="background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Operations</span>
-          <h4 style="margin: 10px 0 0; color: #0b132b;">Marine Task Log 6</h4>
+      <div class="card">
+        <img src="image/work6.jpeg" alt="Marine Task Log 6">
+        <div class="card-body">
+          <h3>Marine Task Log 6</h3>
+          <p>Completed port support mission demonstrating disciplined maritime logistics and rapid turnaround.</p>
+          <span class="card-tag">Operations</span>
         </div>
       </div>
+    </div>
   </div>
 
-<!-- ABOUT PAGE -->
+  <!-- ABOUT PAGE (RESTORED) -->
   <div id="about" class="page">
     <div class="section-header">
       <h2 class="section-title">About <span>Power Marine Services Inc.</span></h2>
@@ -473,8 +468,8 @@
     <div style="background: white; padding: 2rem; border-radius: 12px; border: 1px solid var(--border); line-height: 1.8; color: #334155; box-shadow: 0 4px 15px rgba(0,0,0,0.03); margin-bottom: 2rem;">
       <h3 style="color: var(--dark); font-size: 1.3rem; margin-bottom: 0.8rem;">Who We Are</h3>
       <p style="margin-bottom: 1.2rem; font-size: 1rem;">
-        <strong>POWER MARINE SERVICES INC.</strong> is a registered Liberian commercial diving and maritime logistics firm headquartered on Dixville,Bassa town in Monrovia, Liberia. We deliver rapid, dependable subsea solutions to international cargo vessels, tankers, offshore rigs, and port operators across Liberia.
-        You can look at our gallery to see most of our work or contact for more information.
+        <strong>POWER MARINE SERVICES INC.</strong> is a registered Liberian commercial diving and maritime logistics firm headquartered in Dixville, Bassa town, Barnersville, Monrovia, Liberia. We deliver rapid, dependable subsea solutions to international cargo vessels, tankers, offshore rigs, and port operators across Liberia.
+        You can look at our gallery to see most of our work or contact us for more information.
       </p>
       <p style="font-size: 0.98rem;">
         Guided by our core motto — <em>“Honesty, Hard – Work & Discipline”</em> — our certified commercial divers and marine technicians operate 24/7 across the <strong>Freeport of Monrovia</strong>, <strong>Grand Bassa Port</strong>, and <strong>Sinoe Port</strong> to minimize vessel turnaround times and ensure full regulatory compliance.
@@ -507,6 +502,7 @@
       </div>
     </div>
   </div>
+
   <!-- CONTACT PAGE (WITH DIRECT WHATSAPP BOOKING) -->
   <div id="contact" class="page">
     <div class="section-header">
@@ -542,43 +538,6 @@
     </div>
   </div>
 
-  <!-- PRIVATE ADMIN DASHBOARD -->
-  <div id="admin" class="page">
-    <div class="admin-container">
-      <div class="admin-header">
-        <div>
-          <h2 style="color: var(--white); font-weight: 800; font-size: 1.3rem;">⚡ Executive Admin CMS</h2>
-          <p style="color: #94A3B8; font-size: 0.85rem;">Manage gallery photos securely.</p>
-        </div>
-        <button class="btn btn-secondary" onclick="logoutAdmin()" style="padding: 0.5rem 1rem; font-size: 0.85rem;">🔒 Lock</button>
-      </div>
-
-      <div class="admin-grid">
-        <div class="admin-card">
-          <h3 style="color: var(--accent); margin-bottom: 1rem; font-size: 1.1rem;">➕ Add Photo to Gallery</h3>
-          <div class="admin-form">
-            <div><label>Photo Title:</label><input type="text" id="photoTitle" placeholder="e.g. Propeller Check"></div>
-            <div><label>Image Path / URL:</label><input type="text" id="photoSrc" placeholder="e.g. image/ship.jpeg"></div>
-            <div>
-              <label>Gallery Category:</label>
-              <select id="photoCategory">
-                <option value="diving">Commercial Diving</option>
-                <option value="inspection">Inspection & CCTV</option>
-                <option value="fleet">Fleet & Workboats</option>
-              </select>
-            </div>
-            <button class="btn" onclick="addGalleryPhoto()">Upload Photo</button>
-          </div>
-        </div>
-
-        <div class="admin-card">
-          <h3 style="color: var(--accent); margin-bottom: 1rem; font-size: 1.1rem;">🗑️ Manage Photos</h3>
-          <div class="admin-photo-list" id="adminPhotoList"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- CORPORATE FOOTER -->
   <footer>
     <div class="footer-container">
@@ -598,23 +557,21 @@
         <ul class="contact-list">
           <li><span>📞</span> <strong>Cells#:</strong> +231(0)886871691 / +231(0)770202441</li>
           <li><span>✉️</span> <strong>Email:</strong> powermarine9@gmail.com</li>
-          <li><span>🏢</span> <strong>Address:</strong> Dixville Bassa town,Barnersville, Monrovia, Liberia</li>
+          <li><span>🏢</span> <strong>Address:</strong> Dixville Bassa town, Barnersville, Monrovia, Liberia</li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
       <div>&copy; 2026 POWER MARINE SERVICES INC. Monrovia, Liberia. All rights reserved.</div>
-      
     </div>
   </footer>
 
   <!-- EMBEDDED JAVASCRIPT -->
   <script>
-    // Configuration for Dynamic Hero Banners per Tab
     const tabBanners = {
       home: {
-        bg: "url('image/ship.jpeg')",
+        bg: "linear-gradient(rgba(11, 19, 37, 0.82), rgba(0, 168, 89, 0.72)), url('image/ship.jpeg')",
         motto: "Motto: “Honesty, Hard – Work & Discipline”",
         title: "POWER MARINE SERVICES INC.",
         desc: "Certified commercial diving, underwater hull cleaning, live CCTV video inspection, diver transport workboats, and port permit clearance in Monrovia, Grand Bassa, and Sinoe Port.",
@@ -634,13 +591,6 @@
         desc: "Real photographic documentation of our commercial divers, workboat fleets, and underwater vessel maintenance tasks.",
         buttons: ``
       },
-      projects: {
-        bg: "linear-gradient(rgba(11, 19, 37, 0.85), rgba(245, 158, 11, 0.65)), url('image/ship.jpeg')",
-        motto: "Track Record of Success",
-        title: "Completed Port Operations",
-        desc: "Review our recent successful subsea intervention projects executed for major shipping lines across Liberian ports.",
-        buttons: `<button class="btn" onclick="showPage('contact')">Start a Project</button>`
-      },
       about: {
         bg: "linear-gradient(rgba(11, 19, 37, 0.85), rgba(75, 85, 99, 0.75)), url('image/ship.jpeg')",
         motto: "Registered Liberian Contractor",
@@ -654,30 +604,21 @@
         title: "Contact & Service Booking",
         desc: "Reach out directly to our Monrovia operations base for immediate vessel clearance and emergency diving support.",
         buttons: ``
-      },
-      admin: {
-        bg: "linear-gradient(rgba(11, 19, 37, 0.95), rgba(15, 23, 42, 0.95))",
-        motto: "Secure Staff Portal",
-        title: "Executive Admin CMS",
-        desc: "Manage website media and dynamic content controls securely.",
-        buttons: ``
       }
     };
 
-    // Toggle Mobile Hamburger Menu
     function toggleMobileMenu() {
       const nav = document.getElementById('mainNav');
       nav.classList.toggle('mobile-open');
     }
 
-    // Dynamic Page Switcher & Banner Customizer
     function showPage(pageId) {
       document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
       document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
       
       document.getElementById(pageId).classList.add('active');
       const navItem = document.getElementById('nav-' + pageId);
-      if(navItem) navItem.classList.add('active');
+      if (navItem) navItem.classList.add('active');
 
       const bannerConfig = tabBanners[pageId] || tabBanners['home'];
       const hero = document.getElementById('heroBanner');
@@ -691,149 +632,17 @@
       window.scrollTo(0, 0);
     }
 
-    // Gallery & Admin Functions
-    function getStoredPhotos() {
-      const stored = localStorage.getItem('power_marine_photos');
-      return stored ? JSON.parse(stored) : [];
-    }
-
-    function renderPublicGallery() {
-      const photos = getStoredPhotos();
-      const grid = document.getElementById('publicGalleryGrid');
-      if (!grid) return;
-      grid.innerHTML = '';
-
-      if (photos.length === 0) {
-        grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: var(--gray);"><h3>No gallery photos uploaded yet.</h3><p>Log in via [Staff Login] at the bottom to upload your operational pictures.</p></div>';
-        return;
-      }
-
-      photos.forEach(photo => {
-        const card = document.createElement('div');
-        card.className = `card g-item ${photo.category}`;
-        card.innerHTML = `
-          <img src="${photo.src}" alt="${photo.title}" onerror="this.onerror=null; this.replaceWith(createFallbackIcon('⚓'))">
-          <div class="card-body">
-            <h3>${photo.title}</h3>
-            <p>Category: ${photo.category.toUpperCase()}</p>
-            <span class="card-tag">Verified Photo</span>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-    }
-
-    function createFallbackIcon(iconSymbol) {
-      const box = document.createElement('div');
-      box.className = 'card-icon-box';
-      box.innerText = iconSymbol;
-      return box;
-    }
-
-   function renderAdminPhotoList() {
-      const photos = getStoredPhotos();
-      const list = document.getElementById('adminPhotoList');
-      if (!list) return;
-      list.innerHTML = '';
-
-      if (photos.length === 0) {
-        list.innerHTML = '<p style="color:#94A3B8;">No photos in gallery. Add one using the form on the left.</p>';
-        return;
-      }
-
-      photos.forEach(photo => {
-        const item = document.createElement('div');
-        item.className = 'admin-photo-item';
-        item.innerHTML = `
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <img src="${photo.src}" alt="${photo.title}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px; border: 1px solid #334155;" onerror="this.src='image/ship.jpeg'">
-            <div>
-              <strong style="color:white;">${photo.title}</strong>
-              <div style="font-size:0.8rem; color:#94A3B8;">${photo.src} (${photo.category})</div>
-            </div>
-          </div>
-          <button class="btn btn-danger" style="padding:0.3rem 0.6rem; font-size:0.75rem;" onclick="deleteGalleryPhoto(${photo.id})">Delete</button>
-        `;
-        list.appendChild(item);
-      });
-    }
-
-    function addGalleryPhoto() {
-      const title = document.getElementById('photoTitle').value;
-      const src = document.getElementById('photoSrc').value;
-      const category = document.getElementById('photoCategory').value;
-
-      if (!title || !src) {
-        alert('Please enter both a title and image path/URL.');
-        return;
-      }
-
-      const photos = getStoredPhotos();
-      photos.push({ id: Date.now(), title, src, category });
-      localStorage.setItem('power_marine_photos', JSON.stringify(photos));
-
-      renderPublicGallery();
-      renderAdminPhotoList();
-
-      document.getElementById('photoTitle').value = '';
-      document.getElementById('photoSrc').value = '';
-      alert('Photo uploaded successfully to Gallery!');
-    }
-
-    function deleteGalleryPhoto(id) {
-      if (confirm('Delete this photo from the gallery?')) {
-        let photos = getStoredPhotos();
-        photos = photos.filter(p => p.id !== id);
-        localStorage.setItem('power_marine_photos', JSON.stringify(photos));
-        renderPublicGallery();
-        renderAdminPhotoList();
-      }
-    }
-
-    function filterGallery(category) {
-      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-      event.target.classList.add('active');
-
-      document.querySelectorAll('.g-item').forEach(item => {
-        if (category === 'all' || item.classList.contains(category)) {
-          item.style.display = 'flex';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    }
-
-    function openAdminPortal() {
-      const pwd = prompt('Enter Admin Password:');
-      if (pwd === 'adminkelvin23') {
-        showPage('admin');
-        renderAdminPhotoList();
-      } else if (pwd !== null) {
-        alert('Incorrect Password!');
-      }
-    }
-
-    function logoutAdmin() {
-      alert('Admin dashboard locked.');
-      showPage('home');
-    }
-
-    // Direct WhatsApp Booking Function
     function sendToWhatsApp(event) {
       event.preventDefault();
       
       const vessel = document.getElementById('waVessel').value;
       const service = document.getElementById('waService').value;
       const port = document.getElementById('waPort').value;
-      
       const phoneNumber = "231770202441"; 
       
       const message = `*New Subsea Booking Request*%0A%0A*Vessel/Line:* ${vessel}%0A*Service:* ${service}%0A*Port Location:* ${port}`;
-      
       window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
     }
-
-    renderPublicGallery();
   </script>
 </body>
 </html>
